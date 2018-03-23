@@ -130,6 +130,7 @@ client.on("message", async message => {
   }
   
   if(command === "purge") {
+  
     const deleteCount = parseInt(args[0], 10);
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
@@ -142,4 +143,4 @@ client.on("message", async message => {
   
 });
 
-client.login("NDI2NjUxNTc2MzcyMDM1NTg0.DZZGQg.tqG0VoeqyjUigexYCefrjSKoEhc");
+client.login(process.env.BOT_TOKEN);
