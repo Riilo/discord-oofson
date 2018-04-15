@@ -2,6 +2,8 @@
   "name": "discord-oofson",
   "description": "A Discord bot coded in Discord.JS, hosted using Heroku.",
   "version": "1.0.0",
+  "engines": {
+    "npm": "5.7.1"
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
