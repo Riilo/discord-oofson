@@ -87,7 +87,7 @@ client.on("message", async message => {
     pollTopic.react(`✅`);
     pollTopic.react(`⛔`);
 };
-
+// test
   
   if(command === "kick") {
     if(!message.member.roles.some(r=>["Owner","Colonel General"].includes(r.name)) )
