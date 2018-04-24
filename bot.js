@@ -13,11 +13,11 @@ client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
-
+/*
 client.on("messageDelete", (messageDelete) => {
  messageDelete.channel.send(`The message: "${messageDelete.content}" by ${messageDelete.author.tag} was deleted. Let's hope you're better at hiding your porn.`)
 });
- 
+ */
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
