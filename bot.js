@@ -19,7 +19,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("messageDelete", (messageDelete) => {
-let logschannel = message.guild.channels.find('logs', 'CHANNEL-NAME');
+let logschannel = message.guild.channels.find('logs', 'logs');
  messageDelete.logschannel.send.send(`The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`)
 });
  
