@@ -20,7 +20,7 @@ client.on("guildCreate", guild => {
 
 client.on('messageDelete', function(message, channel){
 let logschannel = message.guild.channels.find('name', 'logs');
-    message.channel.send({embed: {
+    logschannel.send({embed: {
     color: 3447003,
     description: message
  }});
