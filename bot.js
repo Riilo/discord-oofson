@@ -19,7 +19,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("messageDelete", (messageDelete) => {
- messageDelete.channel.send.send(`The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`)
+ messageDelete.channel.send(`The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`)
 });
  
 
