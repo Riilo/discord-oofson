@@ -9,10 +9,6 @@ client.on("ready", () => {
   client.user.setGame(`on ${client.guilds.size} servers\n Add me to your server: https://goo.gl/UHDou4`);
 });
 
-client.on('guildMemberAdd', member => {
-  message.channel.send("Welcome to the server! ${member}!");
-});
-
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   client.user.setGame(`on ${client.guilds.size} servers`);
