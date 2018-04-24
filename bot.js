@@ -18,12 +18,9 @@ client.on("guildCreate", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-client.on('messageDelete', function(message, channel){
-let logschannel = message.guild.channels.find('name', 'logs');
-    logschannel.send({embed: {
-    color: 3447003,
-    description: message
- }});
+client.on("messageDelete", (messageDelete) => {
+ messageDelete.channel.send(`The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`)
+});
  
 
 client.on("guildDelete", guild => {
