@@ -18,6 +18,13 @@ client.on("guildCreate", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
+client.on('messageDelete', function(message, channel){
+    message.channel.send({embed: {
+    color: 3447003,
+    description: message
+ }});
+ 
+
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
   client.user.setGame(`on ${client.guilds.size} servers`);
