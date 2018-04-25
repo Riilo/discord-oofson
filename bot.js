@@ -14,7 +14,7 @@ client.on("guildCreate", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-client.on("message", (message) => {
+client.on("messageDelete", (message) => {
  let logschannel = message.guild.channels.find('name', 'logs');
  message.logschannel.send(`The message: "${message.content}" by ${message.author.tag} was deleted. Let's hope you're better at hiding your porn.`)
 });
