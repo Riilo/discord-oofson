@@ -85,7 +85,8 @@ client.on("message", async message => {
   if(command === "info") {
     message.channel.send({embed: {
     color: 3447003,
-    description: "**G'day, I'm Oofson, the biggest meme of 2018. I like rushing to class and being a teacher pet. Which is why I have come to help you all and provide you with some amazing commands. Do '!help' to see all of the commands."
+    icon_url: client.user.avatarURL,
+    description: "G'day, I'm Oofson, the biggest meme of 2018. I was created by the legendary @Rilo#6659. I like rushing to class and being a teacher pet. Which is why I have come to help you all and provide you with some amazing commands. Do '!help' to see all of the commands."
 }})};
   
 
