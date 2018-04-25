@@ -86,7 +86,7 @@ client.on("message", async message => {
     message.channel.send({embed: {
     color: 3447003,
     description: "**G'day, I'm Oofson, the biggest meme of 2018. I like rushing to class and being a teacher pet. Which is why I have come to help you all and provide you with some amazing commands. Do '!help' to see all of the commands."
-}}});
+}})};
   
 
   if(command === "poll") {
