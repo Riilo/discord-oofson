@@ -15,7 +15,8 @@ client.on("guildCreate", guild => {
 });
 
 client.on("messageDelete", (message) => {
- message.channel.send(`The message: "${message.content}" by ${message.author.tag} was deleted. Let's hope you're better at hiding your porn.`)
+ let logschannel = message.guild.channels.find('name', 'logs');
+ message.logschannel.send(`The message: "${message.content}" by ${message.author.tag} was deleted. Let's hope you're better at hiding your porn.`)
 });
  
 
