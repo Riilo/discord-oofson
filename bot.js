@@ -19,7 +19,7 @@ client.on("messageDelete", (message) => {
  logschannel.send({embed: {
               color: Math.floor(Math.random() * 16777214) + 1,  
               description: ("The message: '${message.content}' by ${message.author.tag} was deleted. Let's hope you're better at hiding your porn.")
-}}});
+}})});
  
 
 client.on("guildDelete", guild => {
