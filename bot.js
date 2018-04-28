@@ -18,7 +18,7 @@ client.on("messageDelete", (message) => {
  let logschannel = message.guild.channels.find('name', 'logs');
  logschannel.send({embed: {
               color: Math.floor(Math.random() * 16777214) + 1,  
-              description: (`The message: '${message.content}' by @${message.author.tag} was deleted. Let's hope you're better at hiding your porn.`)
+              description: (`The message: '${message.content}' by @${message.author.tag} was deleted by @${message.author}. Let's hope you're better at hiding your porn.`)
 }})});
  
 
