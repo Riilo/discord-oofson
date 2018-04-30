@@ -78,7 +78,7 @@ client.on("message", async message => {
 
   } else
 
-  module.exports.run = async (client, message, args) => {
+   if(command === "avatar") {
     let user = message.guild.member(message.mentions.members.first());invalidUser(message);
 
     let embed = new Discord.RichEmbed()
