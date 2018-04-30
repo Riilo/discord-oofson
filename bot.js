@@ -77,6 +77,17 @@ client.on("message", async message => {
     client.user.setGame(game);
 
   } else
+
+  module.exports.run = async (client, message, args) => {
+    let user = message.guild.member(message.mentions.members.first());invalidUser(message);
+
+    let embed = new Discord.RichEmbed()
+    .setTitle(`Here is ${user.displayName}s avatar.`)
+    .setColor(config.white)
+    .setImage(user.user.displayAvatarURL);
+    message.channel.send(embed);
+    return
+  };
   
   if(command === "say") {
     const sayMessage = args.join(" ");
