@@ -78,17 +78,11 @@ client.on("message", async message => {
 
   } else
 
-   if(command === "avatar") {
-    let user = message.guild.member(message.mentions.members.first());invalidUser(message);
-
-    let embed = new Discord.RichEmbed()
-    .setTitle(`Here is ${user.displayName}s avatar.`)
-    .setColor(config.white)
-    .setImage(user.user.displayAvatarURL);
-    message.channel.send(embed);
-    return
-  };
+  if(command === "avatar") {
+  client.users.get(event.user.uid).avatarURL
   
+  }
+
   if(command === "say") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
