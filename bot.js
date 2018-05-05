@@ -33,7 +33,7 @@ if(command === "bot") {
     member.guild.channels.get('439793088001736725').setName(`Member Count: ${humans}`)
     let bots = member.guild.members.filter(m => m.user.bot).size;
     member.guild.channels.get('439793716052623361').setName(`Bot Count: ${bots}`)
-});
+};
 
 client.on('message', (message) => {
       if(message.content.startsWith('!help')) {
