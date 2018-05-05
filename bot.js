@@ -27,14 +27,6 @@ client.on("guildDelete", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-if(command === "bot") {
-    member.guild.channels.get('439792255365021696').setName(`Total Users: ${member.guild.memberCount}`)
-    let humans = member.guild.members.filter(m => !m.user.bot).size;
-    member.guild.channels.get('439793088001736725').setName(`Member Count: ${humans}`)
-    let bots = member.guild.members.filter(m => m.user.bot).size;
-    member.guild.channels.get('439793716052623361').setName(`Bot Count: ${bots}`)
-}
-
 client.on('message', (message) => {
       if(message.content.startsWith('!help')) {
           message.channel.send({embed: {
@@ -85,6 +77,14 @@ client.on("message", async message => {
     client.user.setGame(game);
 
   } else
+
+  if(command === "bot") {
+    member.guild.channels.get('439792255365021696').setName(`Total Users: ${member.guild.memberCount}`)
+    let humans = member.guild.members.filter(m => !m.user.bot).size;
+    member.guild.channels.get('439793088001736725').setName(`Member Count: ${humans}`)
+    let bots = member.guild.members.filter(m => m.user.bot).size;
+    member.guild.channels.get('439793716052623361').setName(`Bot Count: ${bots}`)
+  }
 
   if(command === "avatar") {
   client.users.get(event.user.uid).avatarURL
