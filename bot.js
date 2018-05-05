@@ -27,7 +27,7 @@ client.on("guildDelete", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-if(command === "stats") {
+if(command === "bot") {
     member.guild.channels.get('439792255365021696').setName(`Total Users: ${member.guild.memberCount}`)
     let humans = member.guild.members.filter(m => !m.user.bot).size;
     member.guild.channels.get('439793088001736725').setName(`Member Count: ${humans}`)
