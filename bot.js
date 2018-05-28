@@ -27,7 +27,7 @@ client.on("guildDelete", guild => {
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-client.on('message', message => { //Message Event | Listener
+client.on('message', (message) => { //Message Event | Listener
 
     if (message.content.startsWith(prefix + 'Userinfo')) {
 
