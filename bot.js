@@ -29,7 +29,7 @@ client.on("guildDelete", guild => {
 
 client.on('message', (message) => { //Message Event | Listener
 
-    if (message.content.startsWith(prefix + 'Userinfo')) {
+    if(message.content.startsWith(prefix + 'Userinfo')) {
 
         const UserInfo = new Discord.MessageEmbed()
 
